@@ -1,10 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
-char A[9][9];
-int i,j;
-int main ()
+#include "form.h"
+void FirstDoska(char A[10][10])
 {
-	
+	int i,j;
+	for (i=0;i<=9;i++) 
+	{
+
+		for (j=0;j<=9;j++)
+		{
+			A[i][j]=' ';
+		}
+	}
 	A[1][0]='8';
 	A[2][0]='7';
 	A[3][0]='6';
@@ -15,7 +22,7 @@ int main ()
 	A[8][0]='1';
 	
 	
-	
+
 	A[9][1]='a';
 	A[9][2]='b';
 	A[9][3]='c';
@@ -60,18 +67,4 @@ int main ()
 	A[7][6]='p';
 	A[7][7]='p';
 	A[7][8]='p';
-	
-
-
- 	for (i=0;i<=9;i++) 
-	{
- 	printf ("\n");
- 	for (j=0;j<=8;j++)
-	 {
-	 	printf ("%c", A[i][j]);
-	 	printf (" ");
-	 	
-	 }
- 	
- 	}
 }
