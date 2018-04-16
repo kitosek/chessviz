@@ -11,4 +11,5 @@ int main ()
 	PrintDoska(A);
 	board(A);
 	PrintDoska(A);
+	return 0;
 }
